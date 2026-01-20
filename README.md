@@ -58,3 +58,10 @@ To design and develop an Online Event Registration & Promotional Portal using HT
 
 ## 📁 Project Structure
 
+urban-micro-gardening/
+│── index.html
+│── style.css
+│── banner.jpg
+│── promo.mp4
+│── intro.mp3
+
