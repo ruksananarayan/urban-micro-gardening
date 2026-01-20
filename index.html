@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Urban Micro-Gardening Workshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Urban Micro-Gardening Workshop</h1>
+        <p>Learn to grow fresh plants in small urban spaces</p>
+    </header>
+
+    <!-- Banner Image -->
+    <section class="media-section">
+        <img src="banner.jpg" alt="Urban Micro Gardening Banner">
+    </section>
+
+    <!-- Promotional Video -->
+    <section class="media-section">
+        <h2>Workshop Preview</h2>
+        <video controls width="600">
+            <source src="promo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Intro Audio -->
+    <section class="media-section">
+        <h2>Expert Introduction</h2>
+        <audio controls>
+            <source src="intro.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="form-section">
+        <h2>Event Registration Form</h2>
+
+        <form action="#" method="post">
+
+            <!-- Text Input -->
+            <label>Full Name:</label>
+            <input type="text" name="name" required>
+
+            <!-- Email Input -->
+            <label>Email Address:</label>
+            <input type="email" name="email" required>
+
+            <!-- Date Input -->
+            <label>Preferred Workshop Date:</label>
+            <input type="date" name="date" required>
+
+            <!-- Radio Buttons -->
+            <label>Workshop Mode:</label>
+            <input type="radio" name="mode" value="Online" required> Online
+            <input type="radio" name="mode" value="Offline"> Offline
+
+            <!-- Select Menu -->
+            <label>Gardening Area:</label>
+            <select name="area" required>
+                <option value="">--Select--</option>
+                <option>Balcony</option>
+                <option>Terrace</option>
+                <option>Window Sill</option>
+                <option>Indoor Pots</option>
+            </select>
+
+            <!-- Textarea -->
+            <label>Previous Gardening Experience:</label>
+            <textarea rows="4" placeholder="Describe briefly..."></textarea>
+
+            <!-- File Upload -->
+            <label>Upload ID Proof:</label>
+            <input type="file" name="file" accept=".jpg,.png,.pdf" required>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Urban Micro-Gardening Workshop</p>
+    </footer>
+
+</body>
+</html>
