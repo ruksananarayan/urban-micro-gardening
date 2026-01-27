@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Urban Micro-Gardening Workshop</title>
+
+    <!-- TC01: External CSS Linking -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Urban Micro-Gardening Workshop</h1>
+    <p>Grow Fresh Plants in Small Urban Spaces</p>
+</header>
+
+<div class="container">
+
+    <!-- Media Section -->
+    <section class="media-section">
+        <img src="banner.jpg" alt="Urban Micro Gardening Banner">
+
+        <h2>Workshop Preview Video</h2>
+        <video controls>
+            <source src="promo.mp4" type="video/mp4">
+        </video>
+
+        <h2>Expert Introduction Audio</h2>
+        <audio controls>
+            <source src="intro.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="form-section">
+        <h2>Event Registration Form</h2>
+
+        <form>
+
+            <label>Full Name</label>
+            <input type="text" required>
+
+            <label>Email Address</label>
+            <input type="email" required>
+
+            <label>Preferred Date</label>
+            <input type="date" required>
+
+            <label>Workshop Mode</label>
+            <input type="radio" name="mode" required> Online
+            <input type="radio" name="mode"> Offline
+
+            <label>Gardening Area</label>
+            <select required>
+                <option value="">Select</option>
+                <option>Balcony</option>
+                <option>Terrace</option>
+                <option>Window Sill</option>
+                <option>Indoor Pots</option>
+            </select>
+
+            <label>Previous Experience</label>
+            <textarea rows="4"></textarea>
+
+            <label>Upload ID Proof</label>
+            <input type="file" required>
+
+            <input type="submit" value="Register">
+
+        </form>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Urban Micro-Gardening Workshop</p>
+</footer>
+
+</body>
+</html>
+
