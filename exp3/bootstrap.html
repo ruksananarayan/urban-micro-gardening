@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Urban Micro-Gardening Workshop - Bootstrap</title>
+
+    <!-- TC01: Bootstrap CDN Integration -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- TC04: Responsive Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+        <a class="navbar-brand" href="#">Urban Gardening</a>
+
+        <!-- Toggle Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header Section -->
+<header class="bg-light text-center p-4">
+    <h1 class="text-success">Urban Micro-Gardening Workshop</h1>
+    <p class="lead">Learn to grow plants in small urban spaces</p>
+</header>
+
+<!-- TC03: Bootstrap Grid System -->
+<div class="container my-4">
+    <div class="row">
+
+        <!-- Media Section -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+
+            <h3>Workshop Preview</h3>
+
+            <!-- TC05: Responsive Image -->
+            <img src="banner.jpg" class="img-fluid rounded mb-3" alt="Gardening Banner">
+
+            <h5>Promo Video</h5>
+            <video class="w-100 mb-3" controls>
+                <source src="promo.mp4" type="video/mp4">
+            </video>
+
+            <h5>Expert Audio Introduction</h5>
+            <audio class="w-100" controls>
+                <source src="intro.mp3" type="audio/mpeg">
+            </audio>
+
+        </div>
+
+        <!-- Registration Form -->
+        <div class="col-lg-6 col-md-6 col-sm-12">
+
+            <h3 class="text-success">Event Registration Form</h3>
+
+            <form>
+
+                <div class="mb-2">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" required>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Preferred Date</label>
+                    <input type="date" class="form-control" required>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Workshop Mode</label><br>
+                    <input type="radio" name="mode"> Online
+                    <input type="radio" name="mode"> Offline
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Gardening Area</label>
+                    <select class="form-select">
+                        <option>Balcony</option>
+                        <option>Terrace</option>
+                        <option>Window Sill</option>
+                        <option>Indoor Pots</option>
+                    </select>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Previous Experience</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Upload ID Proof</label>
+                    <input type="file" class="form-control">
+                </div>
+
+                <!-- TC07: Bootstrap Button -->
+                <button type="submit" class="btn btn-success w-100">Register</button>
+
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-2">
+    <p>© 2026 Urban Micro-Gardening Workshop</p>
+</footer>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
